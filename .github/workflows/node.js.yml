@@ -19,6 +19,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
-    - name: Install start webstie
+    - name: Install dependencies
       run: pnpm install
+    - name: run site
       run: pnpm start
